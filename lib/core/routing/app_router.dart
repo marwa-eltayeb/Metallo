@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:metallo/core/presentation/home_screen.dart';
+import 'package:metallo/features/gold/presentation/screens/gold_screen.dart';
+import 'package:metallo/features/silver/presentation/screens/silver_screen.dart';
 import 'routes.dart';
 
 class AppRouter {
@@ -11,7 +13,18 @@ class AppRouter {
             return HomeScreen();
           },
         );
-
+      case AppRoutes.goldScreen:
+        return MaterialPageRoute(
+          builder: (context) {
+            return GoldScreen();
+          },
+        );
+      case AppRoutes.silverScreen:
+        return MaterialPageRoute(
+          builder: (context) {
+            return SilverScreen();
+          },
+        );
       default:
         return MaterialPageRoute(
           builder: (context) {

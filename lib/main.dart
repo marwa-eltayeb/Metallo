@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:metallo/core/network/dio_helper.dart';
 import 'package:metallo/core/routing/app_router.dart';
 import 'package:metallo/core/routing/routes.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await DioHelper.init();
   runApp(const MyApp());
 }
 
@@ -14,12 +17,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Metallo',
-      theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)),
       initialRoute: AppRoutes.homeScreen,
       onGenerateRoute: AppRouter().generateRoute,
     );
   }
 }
-
