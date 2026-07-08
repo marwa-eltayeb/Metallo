@@ -1,17 +1,8 @@
-# metallo
+# Metallo
 
-A new Flutter project.
+Metallo shows you real-time gold and silver prices in one simple app. Track both metals easily, check the latest numbers, and stay updated on the market — all in one place.
 
-## Getting Started
+## Project Preview
 
-This project is a starting point for a Flutter application.
+[Youtube](https://www.youtube.com/shorts/wWcRyW5n0w4)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
